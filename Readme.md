@@ -113,11 +113,6 @@ WSGIProcessGroup project
 WSGIScriptAlias / /var/www/venv/src/project/wsgi.py
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
-ServerAlias furydgp.com
-Include /etc/letsencrypt/options-ssl-apache.conf
-ServerAlias www.furydgp.com
-SSLCertificateFile /etc/letsencrypt/live/furydgp.com/fullchain.pem
-SSLCertificateKeyFile /etc/letsencrypt/live/furydgp.com/privkey.pem
 </VirtualHost>
 
 ```
